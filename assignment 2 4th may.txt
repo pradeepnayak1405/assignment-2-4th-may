@@ -1,0 +1,18 @@
+  write a program to print given number is palindrome or not using class
+
+program:
+
+num = int(input())
+temp = num
+rev = 0
+dig = 0
+
+while(num > 0):
+    dig = num % 10
+    rev = rev * 10 + dig
+    num = num // 10
+
+if(temp == rev):
+    print("true")
+else:
+    print("false")
